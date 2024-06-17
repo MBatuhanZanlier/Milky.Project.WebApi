@@ -1,0 +1,12 @@
+﻿namespace MilkyProject.WebUI.Dtos.TeamDtos
+{
+    public class ResultTeamDto
+    {
+        public int TeamId { get; set; }
+        public string NameSurname { get; set; }
+        public string ProfileImageUrl { get; set; }
+        public string SocialMediaUrl1 { get; set; }
+        public string SocialMediaUrl2 { get; set; }
+        public string SocialMediaUrl3 { get; set; }
+    }
+}
