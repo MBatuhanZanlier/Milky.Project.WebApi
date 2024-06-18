@@ -29,6 +29,9 @@ builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<ITeamDal,EfTeamDal>();
 builder.Services.AddScoped<ITeamService, TeamManager>(); 
 
+builder.Services.AddScoped<IServiceDal,EfServiceDal>(); 
+builder.Services.AddScoped<IServiceService, ServiceManager>();
+
 builder.Services.AddScoped<ITestimonialDal,EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>(); 
 

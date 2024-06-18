@@ -1,15 +1,20 @@
-﻿@model MilkyProject.WebUI.Dtos.WhyUsDtos.ResultWhyUsDto
+﻿@model List<MilkyProject.WebUI.Dtos.WhyUsDtos.ResultWhyUsDto>
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="section-title bg-white text-start text-primary pe-3">Neden Biz?</p>
-                <h1 class="mb-4">@Model.Title</h1>
-                <p class="mb-4">@Model.Description</p>
+                @foreach (var item in Model)
+                {
+                    
+                <h1 class="mb-4">@item.Title</h1>
+                <p class="mb-4">@item.Description</p>
+                }
+
                 <p><i class="fa fa-check text-primary me-3"></i>Organik tarımı tercih ediyoruz</p>
                 <p><i class="fa fa-check text-primary me-3"></i>Yurt içi ve yurt dışı organik tarım sertifakası</p>
-                <p><i class="fa fa-check text-primary me-3"></i></p>
-                <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+                <p><i class="fa fa-check text-primary me-3"></i>Müşteri  memuniyeti </p>
+                <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Daha fazlasını keşfet  </a>
             </div>
             <div class="col-lg-6">
                 <div class="rounded overflow-hidden">

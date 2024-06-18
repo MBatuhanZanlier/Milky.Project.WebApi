@@ -7,6 +7,12 @@ namespace MilkyProject.WebUI.ViewComponents._Default
     public class DefaultWhtUsComponent : ViewComponent
     { 
         private readonly IHttpClientFactory _httpClientFactory;
+
+        public DefaultWhtUsComponent(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
         public async Task<IViewComponentResult> InvokeAsync()
         { 
             var client=_httpClientFactory.CreateClient();
@@ -14,7 +20,7 @@ namespace MilkyProject.WebUI.ViewComponents._Default
             if (responseMessage.IsSuccessStatusCode) 
             { 
                var jsonData=await responseMessage.Content.ReadAsStringAsync(); 
-               var values=JsonConvert.DeserializeObject<ResultWhyUsDto>(jsonData); 
+               var values=JsonConvert.DeserializeObject<List<ResultWhyUsDto>>(jsonData); 
                return View(values);
             }
             return View(); 
