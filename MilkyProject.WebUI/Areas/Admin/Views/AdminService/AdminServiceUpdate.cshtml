@@ -1,0 +1,39 @@
+﻿@model MilkyProject.WebUI.Dtos.ServiceDtos.UpdateServiceDto
+@{
+    ViewData["Title"] = "AdminServiceUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hakkımızda Güncelleme</h4>
+            @Html.HiddenFor(x => x.ServiceId)
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Name">
+                </div> 
+                <div class="form-group">
+                    <label>Ana Başlık</label>
+                    <input type="text" class="form-control" asp-for="Header" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Küçük Resim</label>
+                    <input type="text" class="form-control" asp-for="SmallImageUrl" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Büyük Resim</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button class="btn btn-light">Geri Dön</button>
+            </form>
+        </div>
+    </div>
+</div>
+

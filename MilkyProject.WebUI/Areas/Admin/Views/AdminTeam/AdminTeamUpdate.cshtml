@@ -1,0 +1,54 @@
+﻿@model MilkyProject.WebUI.Dtos.TeamDtos.UpdateTeamDto
+@{
+    ViewData["Title"] = "AdminTeamUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hakkımızda Güncelleme</h4>
+            @Html.HiddenFor(x => x.TeamId)
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label>Adı Soyadı</label>
+                    <input type="text" class="form-control" asp-for="NameSurname" placeholder="Name">
+                </div> 
+                <br />
+                <div class="form-group">
+                    <label>Görev Adı</label>
+                    <input type="text" class="form-control" asp-for="JobName" placeholder="Name">
+                </div> 
+                <br />
+
+                <div class="form-group">
+                    <label>Profil Resmi</label>
+                    <input type="text" class="form-control" asp-for="ProfileImageUrl" placeholder="Name">
+                </div> 
+                <br />
+
+                <div class="form-group">
+                    <label>Facebook Hesabı</label>
+                    <input type="text" class="form-control" asp-for="SocialMediaUrl1" placeholder="Name">
+                </div> 
+                <br />
+
+                <div class="form-group">
+                    <label>instagram Hesabı</label>
+                    <input type="text" class="form-control" asp-for="SocialMediaUrl2" placeholder="Name">
+                </div> 
+                <br />
+
+                <div class="form-group">
+                    <label>Twiter Hesabı</label>
+                    <input type="text" class="form-control" asp-for="SocialMediaUrl3" placeholder="Name">
+                </div> 
+                <br />
+
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button class="btn btn-light">Geri Dön</button>
+            </form> 
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+﻿@model MilkyProject.WebUI.Dtos.AdressDtos.UpdateAdressDto
+@{
+    ViewData["Title"] = "UpdateAdress";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Adres Güncelleme Sayfası</h4>
+            @Html.HiddenFor(x => x.AdressId)
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label>Cadde İsmi</label>
+                    <input type="text" class="form-control" asp-for="Street" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Telefon Numarası</label>
+                    <input type="text" class="form-control" asp-for="Phone" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Mail Adressi</label>
+                    <input type="text" class="form-control" asp-for="Mail" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Hafta İçi Çalışma saatleri</label>
+                    <input type="text" class="form-control" asp-for="BusinessHoursWeek" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Hafta Sonu Çalışma Saatleri</label>
+                    <input type="text" class="form-control" asp-for="BusinessHoursWeekend" placeholder="Name">
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button class="btn btn-light">Geri Dön</button>
+            </form>
+        </div>
+    </div>
+</div>
+

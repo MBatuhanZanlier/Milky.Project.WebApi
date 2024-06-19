@@ -1,0 +1,42 @@
+﻿@model MilkyProject.WebUI.Dtos.TestimonialDtos.CreateTestimonialDto
+@{
+    ViewData["Title"] = "CreateTestimonail";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hakkımızda Güncelleme</h4>
+          
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label>Adı Soyadı</label>
+                    <input type="text" class="form-control" asp-for="NameSurname" placeholder="Name">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Görev Adı</label>
+                    <input type="text" class="form-control" asp-for="JobName" placeholder="Name">
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <label>Profil Resmi</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl" placeholder="Name">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                </div>
+
+                <br />
+
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button class="btn btn-light">Geri Dön</button>
+            </form>
+        </div>
+    </div>
+</div>>
+
