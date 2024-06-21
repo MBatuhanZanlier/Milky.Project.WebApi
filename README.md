@@ -23,9 +23,9 @@ Bu projede oluşturduğum tanıtım sayfası, bir çiftlik için hem estetik aç
 ## Footer 
 ![Ekran Görüntüsü (83)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/673bda4d-ad80-4249-99a2-7a162cbf2762)
 ## Admin Paneli
-![Ekran Görüntüsü (97)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/098900e9-ec1a-4e65-b330-de5ff39349ed)
-![Ekran Görüntüsü (99)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/e94eb073-89f8-4eb5-9eac-f5b1798056b2)
-![Ekran Görüntüsü (98)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/09858705-3692-4380-8c9b-f6e84c4213c9)
+![Ekran Görüntüsü (98)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/b4ea9834-0717-48c7-a877-29beb3d1e2fb)
+![Ekran Görüntüsü (99)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/acc0005c-70db-44a8-bea3-cac5f1eab3d5)
+
 ## Giriş Yap ve Kayıt ol 
 ![Ekran Görüntüsü (94)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/adea69ad-f4f6-43e8-aadd-45120e9b21c7)
 ![Ekran Görüntüsü (94)](https://github.com/MBatuhanZanlier/Milky.Project.WebApi/assets/158502460/3c6d44e9-6658-41aa-bb5d-cefde04f6a01)
