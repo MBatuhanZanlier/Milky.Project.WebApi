@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace MilkyProject.EntityLayer.Concrete
 {
-    public class AppUser:IdentityUser<int>
-    { 
-        public string Name { get; set; } 
-        public string Surname { get; set; } 
-   
-
+    public class AppRole:IdentityRole<int> 
+    {  
+        public string Description { get; set; }
     }
 }

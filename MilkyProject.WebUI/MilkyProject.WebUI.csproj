@@ -48,4 +48,8 @@
     <None Include="wwwroot\SpicaAdmin-Free-Bootstrap-Admin-Template-master\template\vendors\.DS_Store" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MilkyProject.DataAccessLayer\MilkyProject.DataAccessLayer.csproj" />
+  </ItemGroup>
+
 </Project>

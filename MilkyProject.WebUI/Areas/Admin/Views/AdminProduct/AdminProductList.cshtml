@@ -14,7 +14,8 @@
                         <tr>
                             <th>#</th>
                             <th>Ürün Fotoğrafı</th>
-                            <th>Ürün ismi</th>
+                            <th>Ürün ismi</th> 
+                            <th>Kategori</th> 
                             <th>Eski Fiyat</th>
                             <th>Yeni Fiyat</th>
                             <th>Açıklama</th>
@@ -32,6 +33,7 @@
                                 <td>@item.NewPrice</td>
                            
                                 <td><a href="~/Admin/AdminService/AdminServiceUpdate/@item.ProductId" class="btn btn-info">Düzenle</a></td>
+                                <td><a href="~/Admin/AdminService/AdminServiceUpdate/@item.ProductId" class="btn btn-danger">Sil</a></td>
                             </tr>
                         }
                     </tbody>

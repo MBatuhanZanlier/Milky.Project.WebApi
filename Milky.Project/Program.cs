@@ -3,6 +3,7 @@ using MilkyProject.BussinessLayer.Concrete;
 using MilkyProject.DataAccessLayer.Abstract;
 using MilkyProject.DataAccessLayer.Context;
 using MilkyProject.DataAccessLayer.EntityFramework;
+using MilkyProject.EntityLayer.Concrete;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,7 +38,8 @@ builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 
 builder.Services.AddScoped<IWhyUsDal,EfWhyUsDal>(); 
 builder.Services.AddScoped<IWhyUsService,WhyUsManager>();
-
+builder.Services.AddDbContext<MilkyContext>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MilkyContext>();
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler =
     ReferenceHandler.IgnoreCycles);
